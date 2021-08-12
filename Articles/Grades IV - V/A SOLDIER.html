@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Soldier</title>
+    <link rel="shortcut icon" href="Icon.svg" type="image/x-icon">
+    <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="header">
+            <h1>A Soldier</h1>
+            <h4>By Neil Chawda (IV E)</h4>
+        </div>
+        <picture>
+
+        </picture>
+    </div>
+    <div class="text">
+        <!--TEXT-->
+        <p>Last night I saw a dream that I was a soldier.<br> Doing military exercises.<br> I had worn a soldier's uniform, cap and shoes.<br> I had a gun and I fought the enemies of my country.</p><br>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .banner {
+            width: 100%;
+            display: grid;
+            padding: 30px;
+            grid-gap: 30px;
+        }
+        
+        .header {
+            background-color: #0D1321;
+            width: 100%;
+            padding-top: 100%;
+            /* 1:1 Aspect Ratio */
+            position: relative;
+            /* If you want text inside of it */
+            max-width: 700px;
+            max-height: 700px;
+        }
+        
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #06D6A0;
+            text-align: center;
+            vertical-align: bottom;
+            width: 80%;
+            width: 80%;
+        }
+        
+        h4 {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: lighter;
+            width: 100%;
+            width: 100%;
+            text-align: center;
+        }
+        
+        picture {
+            background: url('https://leadership.ng/wp-content/uploads/2020/06/796572-indian-soldier-.jpg');
+            background-size: cover;
+            width: 100%;
+            padding-top: 100%;
+            max-width: 700px;
+            max-height: 700px;
+            background-position: center;
+        }
+        
+        .text {
+            width: calc(100% - 60px);
+            text-align: justify;
+            margin: 30px;
+        }
+        
+        @media(min-width: 700px) {
+            .banner {
+                grid-template-columns: 1fr 1fr;
+                padding: 5%;
+            }
+            .text {
+                width: 90%;
+                margin: 5%;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            h4 {
+                font-size: 17px;
+            }
+        }
+        
+        @media(min-width: 900px) {
+            .banner {
+                grid-template-columns: 1fr 1fr;
+            }
+            .text {
+                margin-top: 0;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+        }
+        
+        @media(min-width: 1200px) {
+            .banner {
+                grid-template-columns: 1fr 1fr;
+                padding: 5% 10%;
+            }
+            .text {
+                width: 80%;
+                margin: 10%;
+                margin-top: 0;
+            }
+            h1 {
+                font-size: 60px;
+                top: 45%;
+            }
+            h4 {
+                top: 70%;
+            }
+        }
+        
+        @media(min-width: 500px) and (max-width: 700px) {
+            .header,
+            .picture {
+                padding-top: 0;
+                height: 300px;
+            }
+            .banner {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script>
+        ;
+        var header = document.querySelector('.header');
+        var height = header.offsetWidth;
+        console.log(height);
+        line.setAttribute("style", "height: " + height + "px;");
+    </script>
+
+    <!-- CUSTOM SCROLLBAR -->
+    <style>
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 14px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: #fff;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border: 3px #fff solid;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #999999;
+        }
+    </style>
+
+    <!--Navigation Menu-->
+    <div class="menu-container" onclick="myFunction(this)">
+        <iframe src="../../embed3.html" frameborder="0" class="nav-container"></iframe>
+        <abbr title="Navigation Menu (Click)">
+                <div class="container">
+                    <div class="bar1"></div>
+                    <div class="invis"></div>
+                    <div class="bar3"></div>
+                </div>
+            </abbr>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+        <style>
+            html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            .nav-container {
+                width: 100vw;
+                height: 100vh;
+                background: #0a0a14;
+                margin: 0px;
+                position: fixed;
+                left: -100vw;
+                top: 0;
+                transition: 0.5s;
+            }
+            
+            .change .nav-container {
+                left: 0px;
+            }
+            
+            .headings {
+                color: #06D6A0;
+                width: 350px;
+                position: absolute;
+                top: 52%;
+                left: -300px;
+                transform: translate(0%, -50%);
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                text-align: left;
+                font-size: 3em;
+                line-height: 1.75em;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            
+            .change .headings {
+                left: 50px;
+            }
+            
+            .headings:hover>div {
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                transform: translate(-5px);
+            }
+            
+            .headings:hover>div:hover {
+                color: rgb(255, 78, 152);
+                opacity: 1;
+                transform: translate(5px);
+                transition: 0.2s ease-in-out;
+            }
+            
+            .nb {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 25em;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                z-index: -1;
+                opacity: 0.03;
+                color: white;
+            }
+            
+             ::-moz-selection {
+                color: inherit;
+                background: #7eecff;
+            }
+            
+             ::selection {
+                color: inherit;
+                background: #7eecff;
+            }
+            
+            .nav-container::-moz-selection {
+                color: inherit;
+                background: none;
+            }
+            
+            .nav-container::selection {
+                color: inherit;
+                background: none;
+            }
+            
+            .container {
+                display: inline-block;
+                cursor: pointer;
+                margin: 40px;
+                position: fixed;
+                left: -10px;
+                top: -10px;
+                background-color: #0D1321;
+                padding: 10px;
+            }
+            
+            .change .container {
+                background: none;
+            }
+            
+            .bar1,
+            .bar3 {
+                width: 35px;
+                height: 3px;
+                border-radius: 1.5px;
+                background-color: #fff;
+                margin: 2px 0;
+                transition: 0.3s;
+            }
+            
+            .invis {
+                width: 20px;
+                height: 3px;
+                margin: 3px 0;
+            }
+            
+            .change .bar1 {
+                transform: rotate(-45deg) translate(-2px, 6px);
+                background-color: #fff;
+            }
+            
+            .change .bar3 {
+                background-color: #fff;
+                transform: rotate(45deg) translate(-2px, -6px);
+            }
+            
+            @media only screen and (max-width: 750px) {
+                .nav-container {
+                    width: 100%;
+                    opacity: 1;
+                    left: -100%;
+                }
+                .nb {
+                    display: none;
+                }
+                html {
+                    overflow: scroll;
+                }
+            }
+        </style>
+    </div>
+    <!-- DARK MODE SWITCH -->
+    <abbr title="Dark Mode"><i class="gg-dark-mode" onclick="dark()"></i></abbr>
+    <script>
+        function dark() {
+            var element = document.body;
+            element.classList.toggle("dark");
+        }
+    </script>
+    <style>
+        .gg-dark-mode {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        
+        .gg-dark-mode:hover {
+            transform: scale(1.5, 1.5);
+        }
+        
+        .dark {
+            background-color: #0D1321;
+            color: white;
+        }
+    </style>
+
+</body>
+
+</html>

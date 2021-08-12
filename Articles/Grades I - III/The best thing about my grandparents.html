@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My grandparents</title>
+    <link rel="shortcut icon" href="Icon.svg" type="image/x-icon">
+    <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="header">
+            <h1>My grandparents</h1>
+            <h4>By Students of Grade 1</h4>
+        </div>
+        <picture>
+
+        </picture>
+    </div>
+    <div class="text">
+        <!--TEXT-->
+        <p>
+            <table>
+                <tr>
+                    <th>Name of the child</th>
+                    <th>Write-up</th>
+                </tr>
+                <tr>
+                    <td>Jasleen Kaur</td>
+                    <td>My grandparents always give me a loving hug. My grandmother is very good cook and she prepare very delicious food for me.</td>
+                </tr>
+                <tr>
+                    <td>Jeevatmeet Kaur</td>
+                    <td>They are ever ready to do everything for us. They love our parents like our parents do us.</td>
+                </tr>
+                <tr>
+                    <td>Aarush Chakrabarti</td>
+                    <td>My grandparents are the best. The best thing about my grandparents is, they always stand beside me and support everything I do.</td>
+                </tr>
+                <tr>
+                    <td>Shivaani Srivatchan</td>
+                    <td>Grandparents spend more time with me with stories, songs, dance and games! Love you Ammama, Thaatha and Appatha!</td>
+                </tr>
+                <tr>
+                    <td>Aqsa Nawaz</td>
+                    <td>My Grand parents used to tell me new stories and bring gifts for me, They love me so much. They allows me to read story books from their library.</td>
+                </tr>
+                <tr>
+                    <td>Gojeeri Chalke</td>
+                    <td>I love my grandparents because they give me all the love, teach me good habits and pamper me very well.</td>
+                </tr>
+                <tr>
+                    <td>Shreya Singh</td>
+                    <td>The name of my grand parents is Dr Rajendra Singh They are friendly and care for me what surprises is that they love reading</td>
+                </tr>
+                <tr>
+                    <td>Shivansh Singh</td>
+                    <td>My grandparents are very loving and caring. My grandmother tells me good moral stories and my grandfather buys me chocolates. I love them very much.</td>
+                </tr>
+                <tr>
+                    <td>Shreya Soni</td>
+                    <td>I like to play and do Masti with Dadu. Daadi makes yummy food, gives me candies. They love me a lot.</td>
+                </tr>
+                <tr>
+                    <td>Ameya S. Nair</td>
+                    <td>I have sweet grandparents.They are very loving and caring.</td>
+                </tr>
+                <tr>
+                    <td>Aadya Gulia</td>
+                    <td>I love my grandparents because they gave me lovely mumma papa . My dadu bring everything what I demanded.</td>
+                </tr>
+                <tr>
+                    <td>Vaibhav</td>
+                    <td>I love grandparents. They give tasty food, play with me, tell bedtime stories, take me out for fun. They are very old but very kind. They are the best grandparents in the world.</td>
+                </tr>
+                <tr>
+                    <td>Tanishka Jeyaraman</td>
+                    <td>I like my grandparents because they used to fill the swimming pool make us to play inside.I like them because whatever I asked they used to make for me.I love them so much.</td>
+                </tr>
+            </table>
+        </p><br>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s;
+        }
+        
+        .banner {
+            width: 100%;
+            display: grid;
+            padding: 30px;
+            grid-gap: 30px;
+        }
+        
+        .header {
+            background-color: #0D1321;
+            width: 100%;
+            padding-top: 100%;
+            /* 1:1 Aspect Ratio */
+            position: relative;
+            /* If you want text inside of it */
+            max-width: 700px;
+            max-height: 700px;
+        }
+        
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #06D6A0;
+            text-align: center;
+            vertical-align: bottom;
+            width: 80%;
+        }
+        
+        h4 {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: lighter;
+            width: 100%;
+            text-align: center;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+            border: 1px #000 solid;
+        }
+        
+        th {
+            background-color: #06D6A0;
+            border: 2px #000 solid;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        picture {
+            background: url('https://t4.ftcdn.net/jpg/01/67/26/25/360_F_167262538_DEp6fhTcp9ViDnAJZNcaDRBfopCGLA8O.jpg');
+            background-size: cover;
+            width: 100%;
+            padding-top: 100%;
+            max-width: 700px;
+            background-position: center;
+            max-height: 700px;
+        }
+        
+        .text {
+            width: calc(100% - 60px);
+            text-align: justify;
+            margin: 30px;
+        }
+        
+        @media(min-width: 700px) {
+            .banner {
+                grid-template-columns: 1fr 1fr;
+                padding: 5%;
+            }
+            .text {
+                width: 90%;
+                margin: 5%;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            h4 {
+                font-size: 17px;
+            }
+        }
+        
+        @media(min-width: 900px) {
+            .banner {
+                grid-template-columns: 1fr 1fr;
+            }
+            .text {
+                margin-top: 0;
+            }
+            h1 {
+                font-size: 50px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+        }
+        
+        @media(min-width: 1200px) {
+            .banner {
+                grid-template-columns: 1fr 1fr;
+                padding: 5% 10%;
+            }
+            .text {
+                width: 80%;
+                margin: 10%;
+                margin-top: 0;
+            }
+            h1 {
+                font-size: 60px;
+                top: 45%;
+            }
+            h4 {
+                top: 70%;
+            }
+        }
+        
+        @media(min-width: 500px) and (max-width: 700px) {
+            .header,
+            .picture {
+                padding-top: 0;
+                height: 300px;
+            }
+            .banner {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script>
+        ;
+        var header = document.querySelector('.header');
+        var height = header.offsetWidth;
+        console.log(height);
+        line.setAttribute("style", "height: " + height + "px;");
+    </script>
+
+    <!-- CUSTOM SCROLLBAR -->
+    <style>
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 14px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            background: #fff;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border: 3px #fff solid;
+            border-radius: 10px;
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #999999;
+        }
+    </style>
+
+    <!--Navigation Menu-->
+    <div class="menu-container" onclick="myFunction(this)">
+        <iframe src="../../embed3.html" frameborder="0" class="nav-container"></iframe>
+        <abbr title="Navigation Menu (Click)">
+                        <div class="container">
+                            <div class="bar1"></div>
+                            <div class="invis"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </abbr>
+
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+        <style>
+            html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            .nav-container {
+                width: 100vw;
+                height: 100vh;
+                background: #0a0a14;
+                margin: 0px;
+                position: fixed;
+                left: -100vw;
+                top: 0;
+                transition: 0.5s;
+            }
+            
+            .change .nav-container {
+                left: 0px;
+            }
+            
+            .headings {
+                color: #06D6A0;
+                width: 350px;
+                position: absolute;
+                top: 52%;
+                left: -300px;
+                transform: translate(0%, -50%);
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                text-align: left;
+                font-size: 3em;
+                line-height: 1.75em;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            
+            .change .headings {
+                left: 50px;
+            }
+            
+            .headings:hover>div {
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                transform: translate(-5px);
+            }
+            
+            .headings:hover>div:hover {
+                color: rgb(255, 78, 152);
+                opacity: 1;
+                transform: translate(5px);
+                transition: 0.2s ease-in-out;
+            }
+            
+            .nb {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 25em;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                z-index: -1;
+                opacity: 0.03;
+                color: white;
+            }
+            
+             ::-moz-selection {
+                color: inherit;
+                background: #7eecff;
+            }
+            
+             ::selection {
+                color: inherit;
+                background: #7eecff;
+            }
+            
+            .nav-container::-moz-selection {
+                color: inherit;
+                background: none;
+            }
+            
+            .nav-container::selection {
+                color: inherit;
+                background: none;
+            }
+            
+            .container {
+                display: inline-block;
+                cursor: pointer;
+                margin: 40px;
+                position: fixed;
+                left: -10px;
+                top: -10px;
+                background-color: #0D1321;
+                padding: 10px;
+            }
+            
+            .change .container {
+                background: none;
+            }
+            
+            .bar1,
+            .bar3 {
+                width: 35px;
+                height: 3px;
+                border-radius: 1.5px;
+                background-color: #fff;
+                margin: 2px 0;
+                transition: 0.3s;
+            }
+            
+            .invis {
+                width: 20px;
+                height: 3px;
+                margin: 3px 0;
+            }
+            
+            .change .bar1 {
+                transform: rotate(-45deg) translate(-2px, 6px);
+                background-color: #fff;
+            }
+            
+            .change .bar3 {
+                background-color: #fff;
+                transform: rotate(45deg) translate(-2px, -6px);
+            }
+            
+            @media only screen and (max-width: 750px) {
+                .nav-container {
+                    width: 100%;
+                    opacity: 1;
+                    left: -100%;
+                }
+                .nb {
+                    display: none;
+                }
+                html {
+                    overflow: scroll;
+                }
+            }
+        </style>
+    </div>
+    <!-- DARK MODE SWITCH -->
+    <abbr title="Dark Mode"><i class="gg-dark-mode" onclick="dark()"></i></abbr>
+    <script>
+        function dark() {
+            var element = document.body;
+            element.classList.toggle("dark");
+        }
+    </script>
+    <style>
+        .gg-dark-mode {
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        
+        .gg-dark-mode:hover {
+            transform: scale(1.5, 1.5);
+        }
+        
+        .dark {
+            background-color: #0D1321;
+            color: white;
+        }
+    </style>
+
+</body>
+
+</html>
