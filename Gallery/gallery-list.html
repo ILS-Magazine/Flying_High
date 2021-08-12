@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery List</title>
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Gallery List</h1>
+    <div class="articles grade1 grid-container">
+        <a href="Magazine cover/Magazine Cover.html">
+            <div class="article a2">
+                <img src='Home.png' alt="BG 2">
+                <div class="info">
+                    <h2>Magazine Cover Competition Winners</h2>
+                </div>
+            </div>
+        </a>
+        <a href="From_The_Heartland/From The Heartland.html">
+            <div class="article a6">
+                <img src='From_The_Heartland/bg.png' alt="BG 6">
+                <div class="info">
+                    <h2>From The Heartland</h2>   
+                </div>
+            </div>
+        </a>
+        <a href="Magic_Fingers/Magic Fingers.html">
+            <div class="article a6">
+                <img src='Magic_Fingers/bg.png' alt="BG 6">
+                <div class="info">
+                    <h2>Magic Fingers</h2>   
+                </div>
+            </div>
+        </a>
+        <a href="Trees_Bees_and_Birds/Trees, Bees and Birds.html">
+            <div class="article a6">
+                <img src='Trees_Bees_and_Birds/bg.png' alt="BG 6">
+                <div class="info">
+                    <h2>Trees, Bees and Birds</h2>   
+                </div>
+            </div>
+        </a>
+    </div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            transition: 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+        .grid-container{
+            padding: 0 30px;
+        }
+        
+        summary {
+            padding: 10px;
+            position: relative;
+        }
+        
+        summary::marker {
+            content: ">";
+        }
+        
+        .summaryText {
+            text-align: center;
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        details {
+            margin: 30px;
+        }
+        
+         ::-moz-selection {
+            color: inherit;
+            background: #7eecff;
+        }
+        
+         ::selection {
+            color: inherit;
+            background: #7eecff;
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: 5rem;
+            padding-top: 50px;
+        }
+        
+        .articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            margin: 20px 0;
+            width: 100%;
+        }
+        
+        .article {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px #ddd solid;
+            height: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h5 {
+            padding-top: 5px;
+            font-weight: lighter;
+            font-size: 15px;
+        }
+        
+        img::-moz-selection {
+            color: inherit;
+            background: none;
+        }
+        
+        img::selection {
+            color: inherit;
+            background: none;
+        }
+        
+        @media(max-width: 1200px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        
+        @media(max-width: 800px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        
+        @media(max-width: 450px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        /* Grade wise background colours */
+        
+        .gradeColor summary {
+            background-color: #06D6A0;
+        }
+        
+        a {
+            color: inherit;
+        }
+        
+        .alignTop {
+            object-position: top;
+        }
+        
+        h3 {
+            font-weight: lighter;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+    </style>
+        <!--Navigation Menu-->
+        <div class="menu-container" onclick="myFunction(this)">
+            <iframe src="../embed3.html" frameborder="0" class="nav-container"></iframe>
+            <abbr title="Navigation Menu (Click)">
+                        <div class="container">
+                            <div class="bar1"></div>
+                            <div class="invis"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </abbr>
+    
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+            <style>
+                html {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                .nav-container {
+                    width: 100vw;
+                    height: 100vh;
+                    background: #0a0a14;
+                    margin: 0px;
+                    position: fixed;
+                    left: -100vw;
+                    top: 0;
+                    transition: 0.5s;
+                }
+                
+                .change .nav-container {
+                    left: 0px;
+                }
+                
+                .headings {
+                    color: #06D6A0;
+                    width: 350px;
+                    position: absolute;
+                    top: 52%;
+                    left: -300px;
+                    transform: translate(0%, -50%);
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 3em;
+                    line-height: 1.75em;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+                
+                .change .headings {
+                    left: 50px;
+                }
+                
+                .headings:hover>div {
+                    opacity: 0;
+                    transition: 0.5s ease-in-out;
+                    transform: translate(-5px);
+                }
+                
+                .headings:hover>div:hover {
+                    color: rgb(255, 78, 152);
+                    opacity: 1;
+                    transform: translate(5px);
+                    transition: 0.2s ease-in-out;
+                }
+                
+                .nb {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 25em;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                    z-index: -1;
+                    opacity: 0.03;
+                    color: white;
+                }
+                
+                 ::-moz-selection {
+                    color: inherit;
+                    background: #7eecff;
+                }
+                
+                 ::selection {
+                    color: inherit;
+                    background: #7eecff;
+                }
+                
+                .nav-container::-moz-selection {
+                    color: inherit;
+                    background: none;
+                }
+                
+                .nav-container::selection {
+                    color: inherit;
+                    background: none;
+                }
+                
+                .container {
+                    display: inline-block;
+                    cursor: pointer;
+                    margin: 40px;
+                    position: fixed;
+                    left: -10px;
+                    top: -10px;
+                    background-color: #0D1321;
+                    padding: 10px;
+                }
+                
+                .change .container {
+                    background: none;
+                }
+                
+                .bar1,
+                .bar3 {
+                    width: 35px;
+                    height: 3px;
+                    border-radius: 1.5px;
+                    background-color: #fff;
+                    margin: 2px 0;
+                    transition: 0.3s;
+                }
+                
+                .invis {
+                    width: 20px;
+                    height: 3px;
+                    margin: 3px 0;
+                }
+                
+                .change .bar1 {
+                    transform: rotate(-45deg) translate(-2px, 6px);
+                    background-color: #fff;
+                }
+                
+                .change .bar3 {
+                    background-color: #fff;
+                    transform: rotate(45deg) translate(-2px, -6px);
+                }
+                
+                @media only screen and (max-width: 750px) {
+                    .nav-container {
+                        width: 100%;
+                        opacity: 1;
+                        left: -100%;
+                    }
+                    .nb {
+                        display: none;
+                    }
+                    html {
+                        overflow: scroll;
+                    }
+                }
+            </style>
+        </div>
+</body>
+</html>
