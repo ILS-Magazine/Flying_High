@@ -1,0 +1,116 @@
+* {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+h1 {
+    background-color: #0D1321;
+    padding: 20px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.line{
+    width: 5px;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    display: none;
+}
+
+.month {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-top: 20px;
+    color: white;
+}
+
+.event {
+    margin: 20px 10%;
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.fa-youtube-play{ 
+    color:white; 
+    padding: 10px; 
+    position: absolute;
+}
+
+
+/* MONTH-WISE BACKGROUND COLOURS */
+
+.april-may {
+    background-color: cornflowerblue;
+}
+
+/* June was a holiday */
+
+.july {
+    background-color: #5ccbcf;
+}
+
+.august {
+    background-color: lightseagreen;
+}
+
+.september{
+    background-color: deepskyblue;
+}
+
+.october{
+    background-color: palevioletred;
+}
+
+.november{
+    background-color: lightseagreen;
+}
+
+@media(max-width: 600px){
+    .fa-youtube-play{ 
+        left: 5px !important;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 1000px){
+    .content{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .fa-youtube-play{
+        left: calc(20% + 5px) !important;
+    }
+}
+
+@media(min-width: 1000px){
+    .content{
+        width: 100%;
+        margin: 0;
+    }
+    .month:nth-child(odd){
+        width: 30%;
+        margin-left: 15%;
+    }
+    .month:nth-child(even){
+        width: 30%;
+        margin-left: 55%;
+    }
+    .line{
+        width: 5px;
+        background-color: black;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        display: block;
+    }
+}
+
