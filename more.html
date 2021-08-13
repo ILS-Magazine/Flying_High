@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="headings">
+                <div class="nav home"><a href='HomePage/home2.html'" target='_blank'>Home</a></div>
+                <div class="nav articles"><a href='Student_council/council.html'" target='_blank'>Student Council</a></div>
+                <div class="nav gallery"><a href='./Committees/C_List.html'" target='_blank'>Committees</a></div>
+                <div class="nav teachers"><a href='./Laurels/Laurels.html'" target='_blank'>Laurels</a></div>
+                <div class="nav more"><a href='./Gallery/Timeline/Year at a glance.html'" target='_blank'>Timeline</a></div>
+                <div class="nav more"><a href='./Honour Roll/Honour_Roll.html'" target='_blank'>Honour Roll</a></div>
+            </div>
+            <div class="nb">Other links</div>
+
+        </div>
+    </nav>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        body {
+            background: #0a0a14;
+        }
+        
+        .headings {
+            color: #06D6A0;
+            width: 40%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 4em;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #06D6A0;
+        }
+        
+        a:hover {
+            color: rgb(255, 78, 152);
+        }
+        
+        .headings:hover>div {
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            transform: translate(-5px);
+        }
+        
+        .headings:hover>div:hover {
+            color: rgb(255, 78, 152);
+            opacity: 1;
+            transition: 0.1s ease-in-out;
+            transform: translate(5px);
+        }
+        
+        .nb {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20em;
+            line-height: 1em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            z-index: -1;
+            opacity: 0.03;
+            color: white;
+        }
+        
+        @media (max-width: 1100px) {
+            .headings {
+                font-size: 40px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .headings {
+                text-align: left;
+                left: 50px;
+                transform: translate(0, -50%);
+                width: calc(100% - 100px);
+            }
+        }
+        
+         ::-moz-selection {
+            color: inherit;
+            background: none;
+        }
+        
+         ::selection {
+            color: inherit;
+            background: none;
+        }
+    </style>
+</body>
+
+</html>
