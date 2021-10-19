@@ -49,6 +49,23 @@
                 </ul>
             </div>
         </section>
+        <section class="interviewVideoSection">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3_xBjfpZufs"
+                title="An Interview With Mrs Gupta" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen class="iframeVideo"></iframe>
+            <div class="interviewText">
+                <h2>Mrs Sonali Gupta interviewed by Gaurav Shah</h2><br>
+                <p>
+                    2020 has been an unprecedented year for all of us. So much changed in the span of a few days. But,
+                    rather than focus on the negatives, we want to celebrate our triumphs during 2020. All of us,
+                    teachers,
+                    students and staff have accomplished more than we could have ever dreamed of. To recount Indian
+                    Language
+                    School's victories, I interviewed Mrs Sonali Gupta, our principal.
+                </p>
+            </div>
+        </section>
         <section class="page-list">
             <h2 style=" margin: 0; margin-bottom: 30px;">Pages</h2>
             <div class="pages">
@@ -58,7 +75,8 @@
                         Honour Roll</span></div>
                 <div class="page-card button " onclick="window.location.href='Laurels/Laurels.html' "><span>
                         Laurels</span></div>
-                <div class="page-card button " onclick="window.location.href='Teachers/index.html' "><span> ILS Staff</span></div>
+                <div class="page-card button " onclick="window.location.href='Teachers/index.html' "><span> ILS
+                        Staff</span></div>
                 <div class="page-card button " onclick="window.location.href='Student_council/council.html' "><span>
                         Student Council</span></div>
                 <div class="page-card button " onclick="window.location.href='Committees/C_List.html' "><span>
@@ -703,6 +721,40 @@
             .vp-img {
                 margin-right: 0;
                 margin-left: 50px;
+            }
+
+            .interviewVideoSection {
+                display: flex;
+                gap: 20px;
+                height: fit-content;
+                padding: 50px 0;
+            }
+
+            .interviewVideoSection>.iframeVideo {
+                margin-left: 50px;
+                width: 50vw;
+                height: calc(50vw * 9/16);
+                background-color: black;
+                border-radius: 20px;
+            }
+
+            .interviewVideoSection>.interviewText {
+                flex: 1;
+                padding: 10px 50px;
+            }
+
+            @media (max-width: 800px) {
+                .interviewVideoSection.interviewVideoSection {
+                    flex-direction: column;
+                }
+
+                .interviewVideoSection>.iframeVideo {
+                    padding: 20px;
+                    width: 100vw;
+                    height: calc(100vw * 9/16);
+                    border-radius: 0;
+
+                }
             }
         </style>
 
