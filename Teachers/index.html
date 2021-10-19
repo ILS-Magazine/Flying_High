@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILS Teaching Staff</title>
     <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
-    <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="slide.css">
     <style>
         * {
             margin: 0;
@@ -17,78 +14,12 @@
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-        
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-        
-        body {
-            background: #fff;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .header {
-            margin: 5%;
-            padding-bottom: 3%;
-        }
-        
-        .desc {
-            font-size: 2vw;
-        }
-        
+
         .head {
             text-align: center;
             font-size: 7vw;
         }
-        
-        .swiper-container {
-            width: calc(100vw - 50px);
-            height: 80h;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 40px;
-        }
-        
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #181818;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-        
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-        }
 
-        .write-up{
-            padding: 30px
-        }
-        
-        img {
-            width: 100%;
-        }
-        
         h1 {
             font-family: 'Poppins', sans-serif;
             text-align: center;
@@ -96,35 +27,55 @@
             padding-top: 50px;
             padding-bottom: 35px;
         }
-        
-        .swiper-slide p {
-            width: 100%;
-            position: absolute;
-            left: 0px;
-            bottom: 0px;
-            padding: 5px 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-        }
-        
-        @media(min-width: 500px) {
-            img {
-                width: 90%;
-            }
-        }
-        
+
         @media(min-width: 600px) {
             h1 {
                 font-size: 4rem;
             }
         }
-        
+
         @media(min-width: 900px) {
-            img {
-                width: 75%;
-            }
+
             h1 {
                 font-size: 5rem;
+            }
+        }
+
+        .department {
+            display: flex;
+            gap: 20px;
+            height: fit-content;
+            margin-top: 20px;
+        }
+
+        .department:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: #fafafa;
+        }
+
+        .department>.d-img {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .d-img>img {
+            background-color: #eee;
+            width: 100%;
+            height: 100%;
+            max-height: 60vh;
+            border-radius: 10px;
+            object-fit: contain;
+        }
+
+        .department>.d-list {
+            flex: 1;
+            padding: 10px;
+            padding-left: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .department.department {
+                flex-direction: column;
             }
         }
     </style>
@@ -133,308 +84,420 @@
 
 <body>
     <h1>ILS Teaching Staff</h1>
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./Teacher Images/Office.svg">
-                <p>Principal with Office Staff</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/Math.svg">
-                <p>Mathematics Teachers</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/Hindi.svg">
-                <p>Hindi Teachers</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/Social.svg">
-                <p>Social Science Teachers</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/Science.svg">
-                <p>Science Teachers</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/English.svg">
-                <p>English Teachers</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/French.svg">
-                <p>French Teachers</p>
-            </div>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Office.svg"></div>
+        <div class="d-list">
+            <h2>Principal with Office Staff</h2>
+            <ol>
+                <li> Sonali Gupta(Principal)</li>
+                <li> Sandra Fernandes</li>
+                <li> Rachna Dwivedi</li>
+                <li> Malvika Shah</li>
+                <li> Vennila Mahesh</li>
+                <li> Rita Aggarwal</li>
+                <li> Sanyogita Rao</li>
+                <li> Sundari Peri</li>
+                <li> Pratyusha Venkat</li>
 
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/Primary.svg">
-                <p>Primary Teachers</p>
-            </div>
-            <div class="swiper-slide"><img loading='lazy' src="./Teacher Images/KG.svg">
-                <p>KG Teachers</p>
-            </div>
-            <div class="swiper-slide"><img src="./Teacher Images/Comp.svg">
-                <p>Computer Teachers</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="./Teacher Images/Activity.svg">
-                <p>Activity Teachers</p>
-            </div>
-            <div class="swiper-slide"><img src="./Teacher Images/PE.png">
-                <p>Physical Education Teachers</p>
-            </div>
-
-
-
-
-
-
-
-
-
+            </ol>
         </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Math.svg"></div>
+        <div class="d-list">
+            <h2>Mathematics Teachers</h2>
+            <ol>
+                <li>Dr. Manisha Jain(HOD)</li>
+                <li>Seema Khule</li>
+                <li>Anuradha Dhawan</li>
+                <li>Neelam Sharma</li>
+                <li>Meenu Vaid</li>
+                <li>Madhuri Shukla</li>
+                <li>Lakshmi Pillai</li>
+                <li>Aanchal Singh</li>
+                <li>Dr. Shweta Jamloki</li>
+                <li>Natasha Steve Andrew</li>
+                <li>Jenna Thomas</li>
+                <li>Sreeja Chandran</li>
 
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Hindi.svg"></div>
+        <div class="d-list">
+            <h2>Hindi Teachers</h2>
+            <ol>
+                <li>Ishita Yadav(HOD)</li>
+                <li>Manju Krishnan</li>
+                <li>Kumkum Kumar</li>
+                <li>Nirmala Goyal </li>
+                <li>Garima Singh</li>
+                <li>Ravinder Kaur</li>
+                <li>Veena Tiwari</li>
+                <li>Sudha Sharma</li>
+                <li>Padma Mehta</li>
 
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Social.svg"></div>
+        <div class="d-list">
+            <h2>Social Science Teachers</h2>
+            <ol>
+                <li>Bindu Mathew(HOD)</li>
+                <li>Geetanjali Bajaj</li>
+                <li>Nisha Ramchandani</li>
+                <li>Leena Dam</li>
+                <li>Komal Mohite</li>
+                <li>Deepali Dixit</li>
+                <li>Seema Tandon</li>
+                <li>Saavi Melwani</li>
+                <li>Sweety Rathi</li>
+                <li>Aakanksha Bisht</li>
+                <li>Jyotsana Sinha</li>
+                <li>Alison Paul</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Science.svg"></div>
+        <div class="d-list">
+            <h2>Science Teachers</h2>
+            <ol>
+                <li>Rashmi Lakhanpal(HOD)</li>
+                <li>Anuradha Kaurani</li>
+                <li>Lalitha Priya Chandresekaran</li>
+                <li>Aman Preet Chawla</li>
+                <li>Padmavathi Tangirala</li>
+                <li>Gurpreet Manaise</li>
+                <li>Dhanya Arun</li>
+                <li>Jisha P.V.</li>
+                <li>Anusha Mani Kurian</li>
+                <li>Hemamalini Srinivasan</li>
+                <li>Alifiya Abbas</li>
+                <li>Karanjot Bali</li>
+                <li>Neelam Singh</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/English.svg"></div>
+        <div class="d-list">
+            <h2>English Teachers</h2>
+            <ol>
+                <li>Sumita Thakur(HOD)</li>
+                <li>Gursharan Shergill</li>
+                <li>Anju Agnihotri</li>
+                <li>Sonali Gaur</li>
+                <li>Sudipa Mitra</li>
+                <li>Subarna De</li>
+                <li>Vandana Chaturvedi</li>
+                <li>Nivedita Jha</li>
+                <li>Merin Verghese</li>
+                <li>Neha Pruthi</li>
+                <li>Ebere Oforjimba</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/French.svg"></div>
+        <div class="d-list">
+            <h2>French Teachers</h2>
+            <ol>
+                <li>Timilehin Abiodun</li>
+                <li>Nzozi Robinson</li>
+                <li>Ufuoma Peace</li>
 
 
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Primary.svg"></div>
+        <div class="d-list">
+            <h2>Primary Teachers</h2>
+            <ol>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <li>Vandana Bhatia</li>
+                <li>Sunita Sagar</li>
+                <li>Dolly Arora</li>
+                <li>Divya Jagat Suvarna</li>
+                <li>Deepa Jain</li>
+                <li>Vandana Arora</li>
+                <li>Dr. Kinjal Mehta</li>
+                <li>Suneeta Thakur</li>
+                <li>Reena Taya</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/KG.svg"></div>
+        <div class="d-list">
+            <h2>KG Teachers</h2>
+            <ol>
+                <li>Aarti Sood</li>
+                <li>Sunita Tejwani</li>
+                <li>Janvi Motiramani</li>
+                <li>Anita Jiwrajka</li>
+                <li>Parul Sud</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Comp.svg"></div>
+        <div class="d-list">
+            <h2>Computer Teachers</h2>
+            <ol>
+                <li>Obi Victoria Kelechi</li>
+                <li>Afiya Masood</li>
+                <li>Odeyemi Victoria</li>
+                <li>Abirami V.</li>
+                <li>Chinwe Okafor</li>
+                <li>Nessie Sanish</li>
+                <li>Uchechukwu Okafor</li>
+                <li>Uma Rani G.</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/Activity.svg"></div>
+        <div class="d-list">
+            <h2>Activity Teachers</h2>
+            <ol>
+                <li>Anshupriya Mondal</li>
+                <li>Sowmya Umashankar</li>
+                <li>Tuhina Bhalekar</li>
+                <li>Anamika Sharma</li>
+
+            </ol>
+        </div>
+    </section>
+    <section class="department">
+        <div class="d-img"><img src="./Teacher Images/PE.png"></div>
+        <div class="d-list">
+            <h2>Physical Education Teachers</h2>
+            <ol>
+                <li>Dr. Priya Nagine(HOD)</li>
+                <li>Vennila Mahesh</li>
+                <li>Ajele Rotimi</li>
+                <li>Ikuomola Idowu</li>
+                <li>Raymond Adegbenro</li>
+                <li>Owolabi A. Ofuokwu Mooney</li>
+                <li>Ufot Francis</li>
+                <li>Oladimeji Aluko</li>
+                <li>Eric Okoh Saboni</li>
+
+            </ol>
+        </div>
+    </section>
 
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
+    <!--Navigation Menu-->
+    <div class="menu-container" onclick="myFunction(this)">
+        <iframe src="../embed3.html" frameborder="0" class="nav-container"></iframe>
+        <abbr title="Navigation Menu (Click)">
+            <div class="container">
+                <div class="bar1"></div>
+                <div class="invis"></div>
+                <div class="bar3"></div>
+            </div>
+        </abbr>
 
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+        <style>
+            html {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-    <!-- DARK MODE SWITCH -->
-    <abbr title="Dark Mode"><i class="gg-dark-mode" onclick="dark()"></i></abbr>
-    <script>
-        function dark() {
-            var element = document.body;
-            element.classList.toggle("dark");
-        }
-    </script>
-    <style>
-        .gg-dark-mode {
-            cursor: pointer;
-            position: absolute;
-            right: 20px;
-            top: 20px;
-        }
-        
-        .gg-dark-mode:hover {
-            transform: scale(1.5, 1.5);
-        }
-        
-        .dark {
-            background-color: #0D1321;
-            color: white;
-        }
-    </style>
-        <!--Navigation Menu-->
-        <div class="menu-container" onclick="myFunction(this)">
-            <iframe src="../embed3.html" frameborder="0" class="nav-container"></iframe>
-            <abbr title="Navigation Menu (Click)">
-                    <div class="container">
-                        <div class="bar1"></div>
-                        <div class="invis"></div>
-                        <div class="bar3"></div>
-                    </div>
-                </abbr>
-    
-            <script>
-                function myFunction(x) {
-                    x.classList.toggle("change");
-                }
-            </script>
-            <style>
-                html {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-                
+            .nav-container {
+                width: 100vw;
+                height: 100vh;
+                background: #0a0a14;
+                margin: 0px;
+                position: fixed;
+                left: -100vw;
+                top: 0;
+                transition: 0.5s;
+                z-index: 1000;
+            }
+
+            .change .nav-container {
+                left: 0px;
+            }
+
+            .headings {
+                color: #06D6A0;
+                width: 350px;
+                position: absolute;
+                top: 52%;
+                left: -300px;
+                transform: translate(0%, -50%);
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                text-align: left;
+                font-size: 3em;
+                line-height: 1.75em;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+
+            .change .headings {
+                left: 50px;
+            }
+
+            .headings:hover>div {
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                transform: translate(-5px);
+            }
+
+            .headings:hover>div:hover {
+                color: rgb(255, 78, 152);
+                opacity: 1;
+                transform: translate(5px);
+                transition: 0.2s ease-in-out;
+            }
+
+            .nb {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 25em;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+                text-align: center;
+                z-index: -1;
+                opacity: 0.03;
+                color: white;
+            }
+
+            ::-moz-selection {
+                color: inherit;
+                background: #7eecff;
+            }
+
+            ::selection {
+                color: inherit;
+                background: #7eecff;
+            }
+
+            .nav-container::-moz-selection {
+                color: inherit;
+                background: none;
+            }
+
+            .nav-container::selection {
+                color: inherit;
+                background: none;
+            }
+
+            .container {
+                display: inline-block;
+                cursor: pointer;
+                margin: 40px;
+                position: fixed;
+                left: -10px;
+                top: -10px;
+                background-color: #0D1321;
+                padding: 10px;
+                z-index: 1001;
+            }
+
+            .change .container {
+                background: none;
+            }
+
+            .bar1,
+            .bar3 {
+                width: 35px;
+                height: 3px;
+                border-radius: 1.5px;
+                background-color: #fff;
+                margin: 2px 0;
+                transition: 0.3s;
+            }
+
+            .invis {
+                width: 20px;
+                height: 3px;
+                margin: 3px 0;
+            }
+
+            .change .bar1 {
+                transform: rotate(-45deg) translate(-2px, 6px);
+                background-color: #fff;
+            }
+
+            .change .bar3 {
+                background-color: #fff;
+                transform: rotate(45deg) translate(-2px, -6px);
+            }
+
+            @media only screen and (max-width: 750px) {
                 .nav-container {
-                    width: 100vw;
-                    height: 100vh;
-                    background: #0a0a14;
-                    margin: 0px;
-                    position: fixed;
-                    left: -100vw;
-                    top: 0;
-                    transition: 0.5s;
-                    z-index: 1000;
-                }
-                
-                .change .nav-container {
-                    left: 0px;
-                }
-                
-                .headings {
-                    color: #06D6A0;
-                    width: 350px;
-                    position: absolute;
-                    top: 52%;
-                    left: -300px;
-                    transform: translate(0%, -50%);
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: bold;
-                    text-align: left;
-                    font-size: 3em;
-                    line-height: 1.75em;
-                    cursor: pointer;
-                    transition: 0.5s;
-                }
-                
-                .change .headings {
-                    left: 50px;
-                }
-                
-                .headings:hover>div {
-                    opacity: 0;
-                    transition: 0.5s ease-in-out;
-                    transform: translate(-5px);
-                }
-                
-                .headings:hover>div:hover {
-                    color: rgb(255, 78, 152);
+                    width: 100%;
                     opacity: 1;
-                    transform: translate(5px);
-                    transition: 0.2s ease-in-out;
+                    left: -100%;
                 }
-                
+
                 .nb {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 25em;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: bold;
-                    text-align: center;
-                    z-index: -1;
-                    opacity: 0.03;
-                    color: white;
+                    display: none;
                 }
-                
-                 ::-moz-selection {
-                    color: inherit;
-                    background: #7eecff;
+
+                html {
+                    overflow: scroll;
                 }
-                
-                 ::selection {
-                    color: inherit;
-                    background: #7eecff;
-                }
-                
-                .nav-container::-moz-selection {
-                    color: inherit;
-                    background: none;
-                }
-                
-                .nav-container::selection {
-                    color: inherit;
-                    background: none;
-                }
-                
-                .container {
-                    display: inline-block;
-                    cursor: pointer;
-                    margin: 40px;
-                    position: fixed;
-                    left: -10px;
-                    top: -10px;
-                    background-color: #0D1321;
-                    padding: 10px;
-                    z-index: 1001;
-                }
-                
-                .change .container {
-                    background: none;
-                }
-                
-                .bar1,
-                .bar3 {
-                    width: 35px;
-                    height: 3px;
-                    border-radius: 1.5px;
-                    background-color: #fff;
-                    margin: 2px 0;
-                    transition: 0.3s;
-                }
-                
-                .invis {
-                    width: 20px;
-                    height: 3px;
-                    margin: 3px 0;
-                }
-                
-                .change .bar1 {
-                    transform: rotate(-45deg) translate(-2px, 6px);
-                    background-color: #fff;
-                }
-                
-                .change .bar3 {
-                    background-color: #fff;
-                    transform: rotate(45deg) translate(-2px, -6px);
-                }
-                
-                @media only screen and (max-width: 750px) {
-                    .nav-container {
-                        width: 100%;
-                        opacity: 1;
-                        left: -100%;
-                    }
-                    .nb {
-                        display: none;
-                    }
-                    html {
-                        overflow: scroll;
-                    }
-                }
-                
-            </style>
-        </div>
-        <!-- CUSTOM SCROLLBAR -->
+            }
+        </style>
+    </div>
+    <!-- CUSTOM SCROLLBAR -->
     <style>
         /* width */
-        
-         ::-webkit-scrollbar {
+
+        ::-webkit-scrollbar {
             width: 14px;
         }
+
         /* Track */
-        
-         ::-webkit-scrollbar-track {
+
+        ::-webkit-scrollbar-track {
             background: #fff;
         }
-        
+
         .dark::-webkit-scrollbar-track {
             background: #0D1321;
         }
+
         /* Handle */
-        
-         ::-webkit-scrollbar-thumb {
+
+        ::-webkit-scrollbar-thumb {
             background: #aaa;
             border: 3px #fff solid;
             border-radius: 10px;
         }
-        
+
         .dark::-webkit-scrollbar-thumb {
             border: 3px #0D1321 solid;
         }
+
         /* Handle on hover */
-        
-         ::-webkit-scrollbar-thumb:hover {
+
+        ::-webkit-scrollbar-thumb:hover {
             background: #999999;
         }
     </style>
