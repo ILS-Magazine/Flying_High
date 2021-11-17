@@ -12,12 +12,12 @@
 <body>
 
     <div class="ads">
-        <img src="./Advertisements/1.png" alt="">
-        <img src="./Advertisements/2.png" alt="">
-        <img src="./Advertisements/3.png" alt="">
-        <img src="./Advertisements/4.jpg" alt="">
-        <img src="./Advertisements/5.jpg" alt="">
-        <img src="./Advertisements/6.png" alt="">
+        <img src="./Advertisements/1.png" alt="" class="ad">
+        <img src="./Advertisements/2.png" alt="" class="ad">
+        <img src="./Advertisements/3.png" alt="" class="ad">
+        <img src="./Advertisements/4.jpg" alt="" class="ad">
+        <img src="./Advertisements/5.jpg" alt="" class="ad">
+        <img src="./Advertisements/6.png" alt="" class="ad">
     </div>
     <style>
         * {
@@ -41,10 +41,28 @@
 
         }
 
+        @media screen and (max-width: 900px) {
+            .ads{
+            grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .ads{
+            grid-template-columns: 1fr;
+            }
+        }
+
+        .ad{
+            background-color: #eee;
+        }
+
         img {
-            object-fit: cover;
+            object-fit: contain;
             max-width: 100%;
             border-radius: 10px;
+            border: none;
+            outline: none;
         }
     </style>
 </body>
